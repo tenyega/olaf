@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --surligne: #a01ccf;
+    --colorCompteur: #4E00A6;
+    --bgHeader: #50a550;
+    --marge: 10px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+header.ihm_top {
+    background-color: var(--bgHeader);
+    padding: 13px;
+    top: 0;
+    position: sticky;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5)
+}
+
+.surligne {
+    background-color: var(--surligne);
+    padding: 0px 6px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    animation-name: searchWord;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: #000;
+    border: 1px solid #000;
+}
+
+@keyframes searchWord {
+    0%,
+    100% {
+        background-color: hsl(130, 100%, 61%);
+    }
+    50% {
+        background-color: hsl(130, 100%, 91%);
+    }
+}
+
+#compteurMot {
+    background-color: var(--colorCompteur);
+    float: right;
+    color: #fff;
+    padding: 7px;
+    margin-top: 0px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
